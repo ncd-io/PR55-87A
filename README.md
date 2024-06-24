@@ -24,5 +24,10 @@ Release RST button
 
 Once the firmware update is finished, device will reboot
 
-COmmand to start fimrware update -- python ncd_py_bootloader_v2.py COM4 ./Upgrade.ncd 240
+Command to start fimrware update over serial -- python ncd_py_bootloader_v2.py COM4 ./Upgrade.ncd 240
 
+Command to start fimrware update over Air -- python xbee_fota.py COM4 ./Upgrade.ncd 7FFF 41 DB 74 F9 128 1 1
+
+COM4 -- comm port of the wireless modem
+7FFF -- netwrok ID of the sensor 
+41 DB 74 F9 -- MAC address of the sensor 
